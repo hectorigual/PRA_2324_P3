@@ -21,6 +21,7 @@ class BSTree {
 				return n;
 			}
 		}
+
 		BSNode<T>* insert(BSNode<T>* n, T e){
 			if(n == nullptr){
 				return new BSNode<T>(e);
@@ -103,7 +104,7 @@ class BSTree {
 		}
 		
 		T operator[](T e) const{
-			return search(root, e)->elem;
+			return search(e);
 		}
 
 		void insert(T e){
